@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+/* Primary */
+:root{
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+/* Neutral */
+    --Very_dark_blue: hsl(217, 54%, 11%); /*(main BG)*/
+    --dark_blue: hsl(216, 50%, 16%); /* (card BG*/
+    --blue: hsl(215, 32%, 27%); /* (line) */
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Very_dark_blue);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: white 2px solid;
+    color: var(--White);
+    background-color: var(--dark_blue);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.card .frontendmentorlink{
+
+}
+.card .namelink{
+
+}
