@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -23,19 +26,119 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .card{
-    border: white 2px solid;
+    /* border: white 2px solid; */
+    margin: 3em 1em;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 1em;
     color: var(--White);
     background-color: var(--dark_blue);
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 90vw;
 }
-.card .frontendmentorlink{
+.card .imagediv{
+    padding: 1.5em;
+    z-index: 0;
+    
+}
+
+.card .imagediv img{
+    border-radius: 1em;
+    width: 100%;
+}
+
+.card .text{
+    padding: 0em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
-.card .namelink{
+.card .text .header{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.card .text .info{
+    opacity: 0.7;
+    margin: 1em 0em;
+}
+.card .text .values{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0em;
+    align-items: center;
+}
+.card .text .values .values-text{
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card .text .values img{
+    width: 100%;
+    padding-right: 0.4em;
+}
 
+.eth{
+    opacity: 0.8;
+    font-weight: 600;
+    color: var(--Cyan);
+    flex: 1;
+}
+
+.days{
+    opacity: 0.7;
+}
+
+.hl{
+    margin: 0.6em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hl hr{
+    opacity: 0.4;
+    width: 88%;
+}
+
+.creationdiv{
+    padding: 0.7em 1.5em;
+    width: 17em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.creationdiv .creatorimg{
+    width: 2em;
+}
+.creationdiv .creatorimg img{
+    border-radius: 100%;
+    border: 1px solid white;
+    width: 100%;
+}
+.creationdiv .lessopacity{
+    opacity: 0.6;
+}
+
+
+
+
+.attribution{
+    width: 100%;
+    display: flex;
+    color: var(--White);
+    flex-direction: column;
+    align-items: center;
+    margin: 5em 5em;
+}
+.attribution a{
+    color: var(--Soft_blue);
+    text-decoration: none;
 }
